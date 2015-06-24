@@ -20,14 +20,13 @@
 		"angular": "^1.2.21",
 		"angular-animate": "^1.2.21",
     	"angular-mocks": "^1.2.21",
-    	"angular-motion": "^0.3.3",
+    	"angular-motion": "latest",
     	"angular-route": "^1.2.21",
     	"angular-sanitize": "^1.2.21",
     	"angular-scenario": "^1.2.21",
     	"bootstrap": "latest",
    		"bootstrap-additions": "latest",
     	"font-awesome": "^4.1.0",
-    	"jquery": "^2.1.1",
-    	"html5-boilerplate": "~5.2.0"
+    	"jquery": "^2.1.1"
 	}
 }
