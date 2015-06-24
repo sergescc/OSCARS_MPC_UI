@@ -1,0 +1,33 @@
+{
+	"name" : "OSCARS_MPC_UI",
+	"version" : "0.0.1",
+	"main" : "app/css/main.css",
+
+	"repository": {
+    "type": "git",
+    "url": "https://github.com/sergescc/OSCARS_MPC_UI.git"
+    },
+
+	"ignore": [
+    "node_modules",
+    "bower_components",
+    "bootstrap-additions",
+    "test",
+    "tests"
+    ],
+
+	"dependencies" : {
+		"angular": "^1.2.21",
+		"angular-animate": "^1.2.21",
+    	"angular-mocks": "^1.2.21",
+    	"angular-motion": "^0.3.3",
+    	"angular-route": "^1.2.21",
+    	"angular-sanitize": "^1.2.21",
+    	"angular-scenario": "^1.2.21",
+    	"bootstrap": "latest",
+   		"bootstrap-additions": "latest",
+    	"font-awesome": "^4.1.0",
+    	"jquery": "^2.1.1",
+    	"html5-boilerplate": "~5.2.0"
+	}
+}
