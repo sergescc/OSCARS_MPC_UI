@@ -1,13 +1,43 @@
 <!DOCTYPE html>
-<html data-ng-app="OSCARS_MPC_WEB_UI">
+<html ng-app="OSCARS_MPC_UI">
 <head>
 	<meta charset="UTF-8">
 	<title>OSCARS Multi-Path Client</title>
-	<script type="text/javascript" src="app/js/lib.js"></script>
-	<script type="text/javascript" src="app/js"
+	<link rel="stylesheet" type="text/css" href="css/lib.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel='stylesheet' type="text/css" href='lib/bootstrap/dist/css/bootstrap.min.css'> 
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
+	<script src="lib/angular/angular.js"></script>
+	<script src="js/OSCARS_MPC_UI.js"></script>
 </head>
 
-<body>
-	This is the Body
+<body ng-controller="viewCtrl as view" >
+	<div id="TitleBar" >
+		<span>
+			<div>
+				<h1 id="OSCARSMPC">OSCARS Multi-Path Client </h1> 
+			</div>
+			<div>
+				<a id="barLinks" ng-click="view.register()">{{view.registerButton.name}}</a>
+			</div>
+			<div>
+				<a id="barLinks">|</a>
+			</div>
+			<div>
+				<a id="barLinks" ng-click="view.login()">{{view.loginButton.name }}</a>
+			</div>
+		</span>
+
+	</div>
+	
+	<div id="{{view.navBarState}}" >
+		<span id="hamburger" 
+			class="glyphicon glyphicon-menu-hamburger"
+			ng-click="view.toggleNavBar()">
+
+		</span>
+	</div> 
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
 </html>

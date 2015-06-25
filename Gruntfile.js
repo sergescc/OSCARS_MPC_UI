@@ -1,7 +1,7 @@
 module.exports = function(grunt) {
 	//project configuration
 	grunt.loadNpmTasks('grunt-contrib-concat');
-	grunt.loadNpmTasks('grunt-concat-css')
+	grunt.loadNpmTasks('grunt-concat-css');
 	
 
 	grunt.initConfig({
@@ -15,12 +15,16 @@ module.exports = function(grunt) {
 			{
 				src: ['./app/lib/**/*.js'],
 				dest: './app/js/lib.js'
-			},
-
-			styles: 
-			{
-				src: ['./app/lib']
 			}
+
+		},
+		concat_css: {
+
+			styles:
+			{
+				src: ['./app/lib/**/*.css'],
+				dest: './app/css/lib.css'
+			},
 
 		}
 		

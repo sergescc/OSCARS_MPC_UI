@@ -25,6 +25,7 @@
     	"grunt-contrib-concat" : "latest",
     	"grunt-relative-root" : "latest", 
 		"grunt-cli" : "latest",
+		"grunt-concat-css" : "latest",
     	"http-server": "^0.6.1",
     	"jasmine-core": "^2.3.4",
     	"karma": "~0.12",
