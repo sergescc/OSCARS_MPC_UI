@@ -23,12 +23,12 @@
 
 	<!--Google maps API -->
 
-	<scrip src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAFgYt0TxFQtfuUdiucOJhFk6gi2CXH3D0'></script>
+	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAFgYt0TxFQtfuUdiucOJhFk6gi2CXH3D0'></script>
 
 	<!--Angulr JS Files related to the Project -->
 	<script src='js/lib.js'></script>
-	<script src='js/MapApp.js'></script>
-	<script src="js/OSCARS_MPC_UI.js"></script>
+	<script src='js/local.js'></script>
+
 
 
 </head>
@@ -52,19 +52,27 @@
 			</div>
 		</span>
 	</div>
-		<div id="{{view.navBarState}}" >
-			<span id="hamburger" 
+	<div id="{{view.navBarState}}" >
+		<span id="hamburger" 
 			class="glyphicon glyphicon-menu-hamburger"
 			ng-click="view.toggleNavBar()">
-			</span>
-		</div>
+		</span>
 
-		<div id="mapClosedNav" ng-controller="MapAppCtrl">
-			<ui-gmap-google-map center="map.center" zoom="map.zoom"></ui-gmap-google-map>
-		</div>
+	</div>
+	
+	<topography-map id="{{view.mapNavState}}"></topography-map>
+
+
 	
 
 	<script src="lib/jquery/dist/jquery.js"></script>
 	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+	
+	<script type='text/javascript' id="__bs_script__">
+	//<![CDATA[
+    	document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.7.12.js'><\/script>".replace("HOST", location.hostname));
+	//]]>
+	</script>
+
 </body>
 </html>
