@@ -3,9 +3,9 @@
 
 	MapApp.controller('MapAppCtrl',['$scope', function($scope){
 
-		$scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 8 };
+		$scope.map = { center: { latitude: 45, longitude: -73 }, zoom: 5 };
 		$scope.styles = [ { "stylers": [ { "hue": "#00ddff" },
-		 { "saturation": -90 } ] },
+		 { "saturation": -70 } ] },
 		 { "featureType": "road.local", "stylers": [ { "visibility": "off" } ] },
 		 { "featureType": "road.arterial", "stylers": [ { "visibility": "off" } ] },
 		 { "featureType": "road.highway", "stylers": [ { "visibility": "off" } ] },

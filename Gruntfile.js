@@ -31,7 +31,7 @@ module.exports = function(grunt) {
                         'app/css/*.css', 
                         '!./app/css/lib.css',
                         'app/*.html',
-                        'app/src/*.html',
+                        'app/src/*',
                         'app/js/*.js',
                         '!app/js/lib.js'
                     ]
