@@ -1,0 +1,15 @@
+<link rel="stylesheet" type="text/css" href="css/main.css">
+<script src="lib/angular/angular.js"></script>
+<script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAFgYt0TxFQtfuUdiucOJhFk6gi2CXH3D0"></script>
+<script src="lib/angular-google-maps/dist/angular-google-maps.js"></script>
+<script src="lib/lodash/lodash.js"></script>
+<script src='js/MapApp.js'></script>
+
+</script>
+
+<html ng-app="MapApp" >
+<h1>Map Test</h1>
+<div ng-controller="MapAppCtrl">
+	<ui-gmap-google-map center="map.center" zoom="map.zoom"></ui-gmap-google-map>
+</div>
+<html>

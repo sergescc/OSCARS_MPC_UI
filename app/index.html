@@ -1,17 +1,41 @@
+<!-- 
+	OSCARS Multi-Path Client Web User Interface 
+	Written By: Sergio Coronado
+	Thursday 22:14 
+	git Repository @ https://github.com/sergescc/OSCARS_MPC_UI.git
+	-->
+
+<!-- Main View-->
 <!DOCTYPE html>
 <html ng-app="OSCARS_MPC_UI">
 <head>
 	<meta charset="UTF-8">
 	<title>OSCARS Multi-Path Client</title>
+
+	<!-- Grunt Concatenated CSS file-->
+
 	<link rel="stylesheet" type="text/css" href="css/lib.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-	<link rel='stylesheet' type="text/css" href='lib/bootstrap/dist/css/bootstrap.min.css'> 
+	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+
+	<!-- Font on Site -->
+
 	<link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
-	<script src="lib/angular/angular.js"></script>
+
+	<!--Google maps API -->
+
+	<scrip src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAFgYt0TxFQtfuUdiucOJhFk6gi2CXH3D0'></script>
+
+	<!--Angulr JS Files related to the Project -->
+	<script src='js/lib.js'></script>
+	<script src='js/MapApp.js'></script>
 	<script src="js/OSCARS_MPC_UI.js"></script>
+
+
 </head>
 
+
 <body ng-controller="viewCtrl as view" >
+
 	<div id="TitleBar" >
 		<span>
 			<div>
@@ -27,16 +51,19 @@
 				<a id="barLinks" ng-click="view.login()">{{view.loginButton.name }}</a>
 			</div>
 		</span>
-
 	</div>
-	
-	<div id="{{view.navBarState}}" >
-		<span id="hamburger" 
+		<div id="{{view.navBarState}}" >
+			<span id="hamburger" 
 			class="glyphicon glyphicon-menu-hamburger"
 			ng-click="view.toggleNavBar()">
+			</span>
+		</div>
 
-		</span>
-	</div> 
+		<div id="mapClosedNav" ng-controller="MapAppCtrl">
+			<ui-gmap-google-map center="map.center" zoom="map.zoom"></ui-gmap-google-map>
+		</div>
+	
+
 	<script src="lib/jquery/dist/jquery.js"></script>
 	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>

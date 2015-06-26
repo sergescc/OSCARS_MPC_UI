@@ -1,8 +1,9 @@
-var OSCARS_MPC_UI = angular.module('OSCARS_MPC_UI',[]);
+var OSCARS_MPC_UI = angular.module('OSCARS_MPC_UI',['MapApp']);
 
 OSCARS_MPC_UI.controller('viewCtrl', viewCtrl);
 
-function viewCtrl() {
+function viewCtrl() 
+{
 
 	this.inView = "splash";
 
@@ -46,3 +47,4 @@ viewCtrl.prototype.toggleNavBar = function()
 		this.navBarState = 'navBarClosed';
 	}
 };
+
