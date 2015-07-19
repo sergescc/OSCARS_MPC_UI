@@ -8,7 +8,6 @@
 		{
 			restrict: 'E',
 			templateUrl: './src/nav-bar-directive.html',
-			controller: //to add controller
-
+			controller: 'NavBarCtrl'
 	});
 })();

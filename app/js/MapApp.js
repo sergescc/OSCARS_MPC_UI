@@ -10,8 +10,6 @@
 		 { "featureType": "road.arterial", "stylers": [ { "visibility": "off" } ] },
 		 { "featureType": "road.highway", "stylers": [ { "visibility": "off" } ] },
 		 { "featureType": "administrative.province", "stylers": [ { "visibility": "off" } ] } ];
-
-
 	}]);
 
 
@@ -19,7 +17,7 @@
 
 		return {
 			restrict: 'E',
-			templateUrl: './src/topography-map.html',
+			templateUrl: 'src/topography-map.html',
 			controller: 'MapAppCtrl'
 		};
 	});

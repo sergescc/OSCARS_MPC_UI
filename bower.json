@@ -14,19 +14,25 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "^1.2.21",
-    "angular-animate": "^1.2.21",
-    "angular-mocks": "^1.2.21",
+    "angular": "latest",
+    "angular-animate": "latest",
+    "angular-mocks": "latest",
     "angular-motion": "latest",
-    "angular-route": "^1.2.21",
-    "angular-sanitize": "^1.2.21",
-    "angular-scenario": "^1.2.21",
+    "angular-route": "latest",
+    "angular-sanitize": "latest",
+    "angular-scenario": "latest",
     "bootstrap": "latest",
     "angular-google-maps": "latest",
     "bootstrap-additions": "latest",
     "font-awesome": "^4.1.0",
-    "jquery": "^2.1.1",
-    "angular-ui": "~0.4.0",
-    "ngmap": "~1.7.11"
+    "jquery": "latest",
+    "angular-ui": "latest",
+    "ngmap": "latest",
+    "angular-resource": "latest",
+    "semantic-ui": "latest",
+    "sockjs": "latest",
+    "stomp-websocket": "latest",
+    "showdown": "latest",
+    "angular-bootstrap": "~0.13.0"
   }
 }

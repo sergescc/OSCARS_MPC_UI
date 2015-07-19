@@ -73,9 +73,11 @@ module.exports = function(grunt) {
 			},
 			libScripts: 
 			{
-				src: ['./app/lib/angular/angular.js', 
-				'./app/lib/angular-google-maps/dist/angular-google-maps.js',
-				'./app/lib/lodash/lodash.js'],
+				src: ['./app/lib/angular/angular.js',
+					  './app/lib/angular-google-maps/dist/angular-google-maps.js',
+					  './app/lib/lodash/lodash.js',
+					  './app/lib/angular-bootstrap/ui-bootstrap.js',
+					  './app/lib/angular-bootstrap/ui-bootstrap-tpls.js'],
 				dest: './app/js/lib.js'
 			}
 

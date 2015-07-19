@@ -15,7 +15,7 @@
 	<!-- Grunt Concatenated CSS file-->
 
 	<link rel="stylesheet" type="text/css" href="css/lib.css">
-	<link rel="stylesheet" type="text/css" href="lib/bootstrap/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 
 	<!-- Font on Site -->
 
@@ -26,29 +26,31 @@
 	<script src='https://maps.googleapis.com/maps/api/js?key=AIzaSyAFgYt0TxFQtfuUdiucOJhFk6gi2CXH3D0'></script>
 
 	<!--Angulr JS Files related to the Project -->
+	
+	
 	<script src='js/lib.js'></script>
 	<script src='js/local.js'></script>
-
 
 
 </head>
 
 
-<body ng-controller="viewCtrl as view" >
+<body ng-controller="viewCtrl as view">
 
-	<div id="TitleBar" >
+	<div id="TitleBar" ng-controller="LoginModalCtrl">
 		<span>
 			<div>
 				<h1 id="OSCARSMPC">OSCARS Multi-Path Client </h1> 
+
 			</div>
 			<div>
-				<a id="barLinks" ng-click="view.register()">{{view.registerButton.name}}</a>
+				<a id="barLinks" ng-click="view.register()" >{{view.registerButton.name}}</a>
 			</div>
 			<div>
 				<a id="barLinks">|</a>
 			</div>
 			<div>
-				<a id="barLinks" ng-click="view.login()">{{view.loginButton.name }}</a>
+				<a id="barLinks" ng-click="open(view.user)" >{{view.loginButton.name }}</a>
 			</div>
 		</span>
 	</div>
@@ -63,16 +65,22 @@
 	<topography-map id="{{view.mapNavState}}"></topography-map>
 
 
-	
+	<div id="sticky footer">
+		
+		<span>
 
-	<script src="lib/jquery/dist/jquery.js"></script>
-	<script src="lib/bootstrap/dist/js/bootstrap.min.js"></script>
+		</span>
+	</div>
+
 	
-	<script type='text/javascript' id="__bs_script__">
+	<script src="lib/jquery/dist/jquery.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+	
+<!--	<script type='text/javascript' id="__bs_script__">
 	//<![CDATA[
     	document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.2.7.12.js'><\/script>".replace("HOST", location.hostname));
 	//]]>
-	</script>
+	</script> -->
 
 </body>
 </html>
